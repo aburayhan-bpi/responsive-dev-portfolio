@@ -107,7 +107,6 @@ nav ul li a {
 
 .banner-profile-pic {
   width: 500px;
-  height: 557px;
 }
 
 /* main section style */
@@ -206,18 +205,43 @@ textarea {
   display: block;
 }
 /* Responsive section */
-.hide {
-  display: none;
-}
 
 /* started from here */
 
 @media screen and (max-width: 576px) {
   .skill-container,
-  .resume-container, .about-items, footer, .about-section {
+  .resume-container,
+  .about-items,
+  footer,
+  .banner,
+  nav,
+  nav > ul,
+  .about-section {
     flex-direction: column;
   }
-  footer, .about-section {
+  nav ul {
+    gap: 10px;
+  }
+  .banner-content .btn {
+    margin-bottom: 10px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+    background-image: none;
+  }
+
+  .banner-profile-pic {
+    width: 100%;
+    margin-left: -20px;
+  }
+
+  footer,
+  .about-section {
     padding: 20px;
   }
   .footer-column {
